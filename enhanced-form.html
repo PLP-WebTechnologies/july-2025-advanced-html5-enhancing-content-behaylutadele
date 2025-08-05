@@ -58,7 +58,7 @@
 
   <form action="#enhanced-form.php" method="POST">
     <label for="firstName">First Name:</label><br>
-    <input type="text" id="firstName" name="firstName" placeholder="enter first name" required><br><br>
+    <input type="text" id="firstName" name="firstName" placeholder="enter first name" autocomplete="on" required><br><br>
 
     <label for="middleName">Middle Name:</label><br>
     <input type="text" id="middleName" name="middleName" placeholder="enter middle name" required><br><br>
@@ -133,6 +133,9 @@
                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                title="Please re-enter the same password."
                required><br><br>
+
+        <label for="role">Position:</label><br>
+        <input type="role" id="role" name="role" value="Employee" readonly>    
 
         <p><em>*Note: Both passwords must match and follow the required format.</em></p>
       </fieldset>
